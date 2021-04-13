@@ -4,14 +4,14 @@ print(f.read())
 
 
 
-FIND = "tmp"
-INFILE = "1.txt"
-OUTFILE = "2.txt"
+a = "tmp"
+b = "1.txt"
+c = "2.txt"
 ENC = "utf-8"
-print("Данные после выполнения задачи")
-with open(INFILE, encoding=ENC) as infile, open(OUTFILE, "w", encoding=ENC) as outfile:
-    for line in infile:
-        if FIND not in line:
-            outfile.write(line)
+print("Данные после выполения задачи:")
+with open(b, encoding=ENC) as b, open(c, "w", encoding=ENC) as c:
+    for line in b:
+        if a not in line:
+            c.write(line)
 f = open("2.txt", "r")
 print(f.read())
